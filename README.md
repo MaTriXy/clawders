@@ -1,8 +1,11 @@
 # 🦞 Clawders
 
 **The community guide to running OpenClaw securely, affordably, and efficiently**
-[![star](https://www.star-history.com/#tomerb3/clawders&type=date&legend=top-left)] (star)
+## Star History
 
+
+         https://www.star-history.com/#tomerb3/clawders&type=date&legend=top-left
+[![Star History Chart](https://api.star-history.com/svg?repos=tomerb3/clawders&type=date&legend=top-left)](https://www.star-history.com/#tomerb3/clawders&type=date&legend=top-left)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-2026.1.30+-orange)](https://openclaw.ai)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/tomerb3/clawders/pulls)
