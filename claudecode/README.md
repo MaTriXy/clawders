@@ -71,3 +71,11 @@ need to check browser cli: vercel browser automation vs playright cli - and need
 https://github.com/microsoft/playwright-cli
 
 ======================================================
+
+claude code 21 hidden settings
+
+https://www.youtube.com/watch?v=pDoBe4qbFPE
+
+one of them is how to help claude code read files bigger then 2000 lines
+
+============================================
