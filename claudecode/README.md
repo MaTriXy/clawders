@@ -95,4 +95,27 @@ make sure in settings.json :  "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
 
 /simplify  simple my code
 
+=============================================
 
+https://www.youtube.com/watch?v=W9igiY2JdHA
+   
+claude --channels plugin:telegram@claude-plugins-official
+https://www.youtube.com/watch?v=GjDRlqmfoT8
+https://bun.sh/
+curl -fsSL https://bun.sh/install | bash
+
+pip install git+https://github.com/RichardAtCT/claude-code-telegram@latest
+Package 'claude-code-telegram' requires a different Python: 3.10.14 not in '>=3.11'
+============================================
+
+https://github.com/oraios/serena
+  like elastic 
+
+https://skillsmp.com/
+  skill market
+
+==============================
+Dan Github with his CLAUDE.md : 
+
+ https://github.com/85danf/agent-skills/blob/master/claude/CLAUDE.md
+===========================

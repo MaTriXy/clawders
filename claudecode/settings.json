@@ -61,13 +61,24 @@
   },
   "skipDangerousModePermissionPrompt": true,
   "hooks": {
-    "PreToolUse": [
+      "PreToolUse": [
       {
         "matcher": "Read",
         "hooks": [
           {
             "type": "command",
-            "command": "node \"/home/youruser/.claude/hooks/large-file-read.js\""
+            "command": "node \"/home/baum/.claude/hooks/large-file-read.js\""
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | { read -r f; case \"$f\" in */.git/*|*/.git) echo '{\"decision\":\"block\",\"reason\":\"Writes to .git/ are not allowed\"}'; exit 2;; esac; }",
+            "timeout": 5,
+            "statusMessage": "Checking .git write guard..."
           }
         ]
       }
