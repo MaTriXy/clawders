@@ -119,3 +119,52 @@ Dan Github with his CLAUDE.md :
 
  https://github.com/85danf/agent-skills/blob/master/claude/CLAUDE.md
 ===========================
+   claude code history explorer 
+
+   https://github.com/jhlee0409/claude-code-history-viewer?tab=readme-ov-file
+  curl -fsSL https://raw.githubusercontent.com/jhlee0409/claude-code-history-viewer/main/install-server.sh | sh
+  
+  sudo apt-get install -y libwebkit2gtk-4.1-0
+
+  cchv-server --serve
+
+ _cchv(){
+   pkill cchv
+   cd
+   (cchv-server --serve) & 
+   cd .claude-history-viewer
+   sleep 5
+   token=$(cat webui-token.txt)
+   echo "http://localhost:3727?token=$token"
+ }
+ alias cchv="_cchv"
+
+
+=======================================
+
+after claude code cracked .
+  https://www.youtube.com/watch?v=mBHRPeg8zPU
+  www.ccunpacked.dev
+  https://github.com/ultraworkers/claw-code
+
+===========================================
+
+claude code self improve https://www.youtube.com/watch?v=wQ0duoTeAAU
+ 
+ ===================================
+
+ cli utils that can help alongside Claude-code
+
+ https://www.youtube.com/watch?v=3NzCBIcIqD0
+   Lazygit
+   glow ( for md files )
+   llmfit   ( table what model i can run in my hardware )
+   models ( list models  providers and how much thet charge )
+   taproom    what brew package i installed
+   ranger  file explorer
+   z jump to folder
+   btop  https://github.com/aristocratos/btop   system monitor
+   mactop
+   chafa file.png    you will see the image in cli 
+   csvlens file.csv
+   
