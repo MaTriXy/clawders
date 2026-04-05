@@ -168,3 +168,19 @@ claude code self improve https://www.youtube.com/watch?v=wQ0duoTeAAU
    chafa file.png    you will see the image in cli 
    csvlens file.csv
    
+=====================================================
+   https://www.youtube.com/watch?v=AhXfI1rSUPc
+ 5 skills / plugins must use 
+
+ remotion  - motion graphics and videos - using simple prompts
+    npx skills add remotion-dev/skills
+     https://www.youtube.com/watch?v=7OR-L0AySn8
+     mkdir v1
+     cd v1
+     bun create video    .... then claude  ...then prompt that will use remotion skill
+ ==========================================
+ claw code : https://www.youtube.com/watch?v=YJR8TfpPUrs
+    https://github.com/ultraworkers/claw-code
+    https://github.com/Yeachan-Heo/oh-my-claudecode
+
+=======================================
