@@ -1,29 +1,26 @@
 # 🦞 Clawders
 
 **The community guide to running OpenClaw securely, affordably, and efficiently**
-## Star History
 
-
-         https://www.star-history.com/#tomerb3/clawders&type=date&legend=top-left
-[![Star History Chart](https://api.star-history.com/svg?repos=tomerb3/clawders&type=date&legend=top-left)](https://www.star-history.com/#tomerb3/clawders&type=date&legend=top-left)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-2026.1.30+-orange)](https://openclaw.ai)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/tomerb3/clawders/pulls)
 
-![openclaw_info1](https://devopsite.top/openclaw_info1.jpeg)
-![Clawders Banner](https://devopsite.top/github-pic1-openclaw.jpeg)
+[![Star History Chart](https://api.star-history.com/svg?repos=tomerb3/clawders&type=date&legend=top-left)](https://www.star-history.com/#tomerb3/clawders&type=date&legend=top-left)
 
 ---
 
 ## 🎯 What is Clawders?
 
-**Clawders** is an updated, community-maintained guide for installing and running [OpenClaw](https://openclaw.ai) in a way that is:
+**Clawders** is a community-maintained guide for installing and running [OpenClaw](https://openclaw.ai) — securely, affordably, and with minimal friction.
 
-- 🔒 **Secure** — Minimize risk with proper isolation, burner accounts, and hardened configurations
-- 👤 **User-Friendly** — Step-by-step instructions from basic to advanced, suitable for beginners
-- 💰 **Token-Efficient** — Run on FREE models (NVIDIA NIM, Ollama) or optimize paid usage to avoid surprise bills
+OpenClaw is a powerful AI agent framework, but its attack surface is large and its security posture requires careful attention. This repo aggregates real-world community experience, official documentation, and security research so you don't have to learn things the hard way.
 
-This guide was compiled from real-world community experience, official documentation, and security research — so you don't have to learn the hard way.
+This guide helps you:
+
+- 🔒 **Minimize risk** — proper isolation, burner accounts, and hardened configurations
+- 👤 **Get started easily** — step-by-step instructions from basic to advanced
+- 💰 **Save money** — free model providers and token-efficient settings
 
 ---
 
@@ -39,65 +36,50 @@ These guides help **minimize the blast radius** if something goes wrong. The gol
 
 ## 📁 Repository Contents
 
-| File | Description |
+| Path | Description |
 |------|-------------|
-| [openclaw/OpenClaw_Installation_Guide.md](openclaw/OpenClaw_Installation_Guide.md) | **📘 Complete Installation Guide** — 9 sections covering prerequisites, security setup, 3 installation methods, 4 model providers, hardening, and troubleshooting |
-| [openclaw/OpenClaw_Installation_Guide.pdf](openclaw/OpenClaw_Installation_Guide.pdf) | **📄 PDF Version** — Same comprehensive guide in printable format |
-| [openclaw/openclaw-tips.txt](openclaw/openclaw-tips.txt) | **💡 Quick Tips** — Community-sourced tips and tricks |
+| [`openclaw/`](openclaw/) | **OpenClaw guides** — installation, security hardening, and tips |
+| [`claudecode/`](claudecode/) | **Claude Code guides** — configuration, plugins, skills, and workflows |
+| [`claw-code/`](claw-code/) | **Claw Code** — an open agent harness built on OpenClaw |
+| [`terminal/`](terminal/) | **Terminal setup** — Wezterm, Starship, and CLI tools |
 
 ---
 
-## 🚀 Quick Start Options
+## 🚀 Quick Start: Install OpenClaw (Free, in 30 seconds)
 
-### Option 1: One-Command Install (FREE - Easiest)
+The fastest way to get started with OpenClaw using the **MiniMax M2.1** model — completely free:
 
 ```bash
 curl -fsSL skyler-agent.github.io/oclaw/i.sh | bash
 ```
 
-This community installer (created with OpenClaw's founder @steipete):
-- ✅ Automatically configures **MiniMax M2.1** (completely FREE model)
-- ✅ One-click authentication — no manual API keys
+This one-command installer:
+- ✅ Automatically configures **MiniMax M2.1** (free tier)
+- ✅ No manual API key setup required
 - ✅ Includes optimized "7-day Coding Plan" presets
-- ✅ Works out of the box
+- ✅ Works out of the box on Linux/macOS
 
-*Source: [@SkylerMiao7](https://x.com/SkylerMiao7/status/2017789329138212986) (73K+ views)*
-
-### Option 2: Docker Install (Recommended for Security)
-
-```bash
-git clone https://github.com/openclaw/openclaw.git
-cd openclaw
-docker compose run --rm openclaw-cli onboard
-docker compose up -d openclaw-gateway
-```
-
-Then harden with our [security guide](openclaw/OpenClaw_Installation_Guide.md#5-security-hardening).
-
-### Option 3: VPS / Cloud Deployment
-
-Use [DigitalOcean's 1-Click Deploy](https://www.digitalocean.com/community/tutorials/how-to-run-openclaw) for a pre-hardened cloud setup.
+> 📺 [See it in action (Twitter/X)](https://x.com/SkylerMiao7/status/2017789329138212986) — 73K+ views
 
 ---
 
 ## 🔒 Essential Security Checklist
 
-**Before you install, you MUST:**
+**Before you install OpenClaw, you MUST do the following:**
 
 | Step | Why It Matters |
 |------|----------------|
 | ✅ Use a **dedicated machine** | If compromised, only that machine is affected |
-| ✅ Create **burner email** | Don't expose your real inbox |
-| ✅ Create **new GitHub account** | Use Personal Access Tokens with limited scope |
-| ✅ Use **burner phone/SIM** | For WhatsApp/Telegram integration |
+| ✅ Create a **burner email** | Don't expose your real inbox |
+| ✅ Create a **new GitHub account** | Use PATs with limited scope |
+| ✅ Use a **burner phone/SIM** | For WhatsApp/Telegram integration |
 | ❌ Never connect **primary email** | Full inbox access = full compromise |
 | ❌ Never connect **banking/financial** | No exceptions, ever |
 | ❌ Never connect **password managers** | Would expose all your credentials |
 
 ### The Freelancer Test™
 
-> Before connecting ANY service, ask yourself:
-> *"Would I give this access to a random freelancer I just hired online?"*
+> Before connecting **any** service, ask yourself: *"Would I give this access to a random freelancer I just hired online?"*
 >
 > **If the answer is NO → Don't give it to OpenClaw.**
 
@@ -105,17 +87,19 @@ Use [DigitalOcean's 1-Click Deploy](https://www.digitalocean.com/community/tutor
 
 ## 💰 Free & Token-Efficient Model Options
 
-One community member spent **$0.60 just saying "hi"** with default Anthropic settings. Don't be that person.
+A community member once spent **$0.60 just saying "hi"** with default Anthropic settings. Don't be that person.
 
 ### Free Options
 
-| Provider | Model | Setup |
+| Provider | Model | Notes |
 |----------|-------|-------|
-| **NVIDIA NIM** | MiniMax, Kimi K2.5 | [build.nvidia.com](https://build.nvidia.com) → Settings → API Keys |
-| **Ollama** | qwen2.5, llama3, etc. | [ollama.com](https://ollama.com) — Runs 100% locally |
-| **One-Command Installer** | MiniMax M2.1 | See Quick Start above |
+| **MiniMax M2.1** | MiniMax M2.1 | Use the one-command installer above |
+| **NVIDIA NIM** | MiniMax, Kimi K2.5 | Free tier at [build.nvidia.com](https://build.nvidia.com) |
+| **Ollama** | qwen2.5, llama3, etc. | 100% local — [ollama.com](https://ollama.com) |
 
-### Critical: Limit Token Usage
+### Token Usage Limit
+
+Set a hard limit on context tokens to prevent runaway costs:
 
 ```bash
 openclaw config set agents.defaults.contextTokens 25000
@@ -125,27 +109,28 @@ openclaw config set agents.defaults.contextTokens 25000
 
 ## 🛡️ Security Tools & Resources
 
-- **[openclaw-shield](https://github.com/knostic/openclaw-shield)** — Prevents leaking secrets, PII, and destructive commands
+- **[openclaw-shield](https://github.com/knostic/openclaw-shield)** — Blocks secret/PII leakage and destructive commands
 - **[awesome-openclaw](https://github.com/thewh1teagle/awesome-openclaw)** — Curated list of tools, guides, and integrations
 
 ---
 
 ## 🤝 Contributing
 
-Found a tip that saved you hours? A security practice that should be shared?
-
-**PRs are welcome!**
+Found a tip that saved you hours? A security practice worth sharing? PRs are welcome!
 
 ---
 
 ## 📜 Credits
 
-This guide was compiled from community wisdom (Israeli tech WhatsApp group), official OpenClaw documentation, and security research from JFrog, Composio, DigitalOcean, and VentureBeat.
+This guide was compiled from community wisdom, official OpenClaw docs, and security research from JFrog, Composio, DigitalOcean, and VentureBeat.
 
-Special thanks to @steipete (OpenClaw), @SkylerMiao7 (one-command installer), and the Knostic team (openclaw-shield).
+Special thanks to:
+- **@steipete** — OpenClaw founder
+- **@SkylerMiao7** — one-command installer author
+- **Knostic team** — openclaw-shield security tooling
 
 ---
 
 <p align="center">
-  <b>Stay secure. Stay efficient. Stay clawed. 🦞</b>
+  <strong>Stay secure. Stay efficient. Stay clawed. 🦞</strong>
 </p>
