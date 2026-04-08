@@ -18,3 +18,36 @@ These CLI utilities pair well with Claude Code to supercharge your workflow:
 📺 [Video: 10 CLI tools that pair with Claude Code](https://www.youtube.com/watch?v=3NzCBIcIqD0)
 
 ---
+
+https://www.youtube.com/watch?v=8HXQ12ff0_s
+
+sesh, zoxide and tmux
+
+================================================
+delta -  better git diff       
+  
+  https://dandavison.github.io/delta/installation.html
+
+  https://github.com/dandavison/delta
+
+================================================
+
+bat https://github.com/sharkdp/bat  (better cat file)
+
+================================================
+
+tldr  (better man command ) 
+
+https://github.com/tldr-pages/tldr
+
+================================================
+
+thefuck ( fix last commands)
+
+in .zshrc: 
+
+eval $(thefuck --alias)
+
+eval $(thefuck --alias fuck)
+
+================================================
