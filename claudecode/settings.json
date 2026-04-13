@@ -67,7 +67,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"/home/baum/.claude/hooks/large-file-read.js\""
+            "command": "node \"$HOME/.claude/hooks/large-file-read.js\""
           }
         ]
       },
@@ -88,7 +88,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"/home/youruser/.claude/hooks/gsd-check-update.js\""
+            "command": "node \"$HOME/.claude/hooks/gsd-check-update.js\""
           }
         ]
       }
@@ -98,7 +98,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"/home/youruser/.claude/hooks/gsd-context-monitor.js\""
+            "command": "node \"$HOME/.claude/hooks/gsd-context-monitor.js\""
           }
         ]
       }
